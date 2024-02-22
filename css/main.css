@@ -1,0 +1,124 @@
+/* Small Reset */
+*::before, *::after, * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Schritftart */
+@font-face {
+    font-family: 'Lora-Italic-VariableFont';
+    src: url(../fonts/Lora/Lora-Italic-VariableFont_wght.ttf);
+    font-display: auto;
+}
+
+@font-face {
+    font-family: 'Montserrat-VariableFont';
+    src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+    font-display: auto;
+}
+
+/* Allgemein */
+
+body {
+    background-color: rgb(249, 239, 239);
+}
+
+/* Desktop */
+@media (min-width: 600px) {
+.burgerMenu {
+    display: none;
+}
+
+.navigation {
+    background-color: rgb(249, 239, 239);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 0.5px solid rgb(167, 167, 167);
+    z-index: 1000;
+    }
+
+.navigation ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 40px;
+    margin-top: 30px;
+    margin-right: 5%;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #373737;
+    float: right;
+    padding-bottom: 30px;
+    transition: transform 0.2s ease; 
+    font-family: 'Montserrat-VariableFont';
+}
+
+.navigation a:hover {
+    color:  rgb(34, 34, 34);
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    margin-bottom: 2%;
+}
+
+.footerNav a {
+    text-decoration: none;
+    color: #373737;
+    font-family: 'Montserrat-VariableFont';
+    font-size: 16px;
+}
+
+.footerNav a:hover {
+    color: #8b8b8b;
+}
+
+.footerNav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    list-style: none;
+    gap: 40px;
+    margin-top: 30px;
+    margin-left: 5%;
+}
+
+.small {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    margin-right: 5%;
+    gap: 30px;
+    margin-top: 100px;
+}
+.small li {
+    list-style: none; 
+}
+
+.small a {
+    font-size: 14px;
+}
+
+.small a:hover {
+    font-size: 14px;
+    color: #8b8b8b;
+}
+
+#copy {
+    color: #373737;
+    font-family: 'Montserrat-VariableFont';
+    font-size: 14px;
+}
+
+.socials {
+    position: absolute;
+    margin-left: 40%;
+    right: 5%;
+}
+}
