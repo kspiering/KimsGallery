@@ -1,13 +1,21 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const burgerIcon = document.getElementById("burger-icon");
-  const menu = document.getElementById("mobile-nav-content");
+  const burgerIcon = document.querySelector(".burgerIcon");
+  const menu = document.querySelector(".mobileNav");
+  const overlay = document.querySelector(".overlay");
   const closeBtn = document.getElementById("exit");
 
   burgerIcon.addEventListener("click", function () {
-    menu.classList.toggle("show");
+    menu.classList.toggle("mobileNav-visible");
+    overlay.classList.toggle("active");
+  });
+
+  overlay.addEventListener("click", function () {
+    menu.classList.remove("mobileNav-visible");
+    overlay.classList.remove("active");
   });
 
   closeBtn.addEventListener("click", function () {
-    menu.classList.remove("show");
+    menu.classList.remove("mobileNav-visible");
+    overlay.classList.remove("active");
   });
 });

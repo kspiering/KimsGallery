@@ -31,7 +31,82 @@ body {
 .navigation {
      display: none;
 }
- 
+
+.burgerMenu {
+    z-index: 1;
+}
+
+.burgerIcon {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-right: 5%;
+    margin-top: 30px;
+}
+
+.burgerLinie {
+    height: 4px;
+    width: 35px;
+    background-color: #555;;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+.mobileNav {
+    height: 100%;
+    width: 75%;
+    background-color: rgb(243, 243, 242);
+    list-style: none;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 999;
+}
+
+.overlay.active {
+    display: block;
+}
+
+.mobileNav a {
+    text-decoration: none;
+    color:#535353;
+    font-size: 16px;
+}
+.footerMobileNav a {
+    text-decoration: none;
+    color:#535353;
+    font-size: 14px;
+}
+
+.mobileNav-visible {
+    display: flex;
+    top: 60px;
+    flex-direction: column;
+    background-color: #2e2e2e;
+    height: 100vh;
+    width: 100%;
+    align-items: flex-start;
+  }
+  .show {
+    display: flex;
+  }
+
+.exit {
+    position: absolute;
+      top: 7px;
+      right: 0;
+      margin-right: 5%;
+      font-size: 60px;
+      cursor: pointer;
+      color: #555;
+      }
 
   .heroImg img {
     height: auto;
@@ -66,35 +141,34 @@ body {
     .small {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap-reverse;
+        flex-wrap: wrap;
         margin-left: 5%;
         margin-right: 5%;
-        margin-top: 50px;
-        gap: 25px;
+        margin-bottom: 5%;
+        margin-top: 150px;
+        gap: 10px;
     }
     .small li {
         list-style: none; 
     }
     
     .small a {
-        font-size: 12px;
+        font-size: 11px;
     }
     
     .small a:hover {
-        font-size: 12px;
+        font-size: 11px;
         color: #8b8b8b;
     }
     
-    #copy, #kim {
+    #copy {
         color: #373737;
         font-family: 'Montserrat-VariableFont';
-        font-size: 12px;
-    }
-    
-    .socials {
-        right: 5%;
+        font-size: 11px;
     }
     }
+
+
 /* Desktop */
 @media (min-width: 600px) {
 .burgerMenu {
@@ -126,7 +200,6 @@ body {
     transition: transform 0.2s ease; 
     float: right;
     padding-bottom: 30px;
- 
     font-family: 'Montserrat-VariableFont';
 }
 
@@ -142,8 +215,7 @@ footer {
 
 .footerNav a {
     text-decoration: none;
-    color: #373737;
-    transition: transform 0.2s ease; 
+    color: #535353;
     font-family: 'Montserrat-VariableFont';
     font-size: 16px;
  
@@ -167,6 +239,7 @@ footer {
 .small {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-left: 5%;
     margin-right: 5%;
@@ -179,7 +252,7 @@ footer {
 
 .small a {
     font-size: 14px;
-    color: #373737;
+     color: #535353;
     transition: transform 0.2s ease; 
 }
 
@@ -188,8 +261,9 @@ footer {
     transform: scale(1.1);
 }
 
-#copy, #kim {
-    color: #373737;
+#copy {
+    color: #535353;
+
     font-family: 'Montserrat-VariableFont';
     font-size: 14px;
 }
