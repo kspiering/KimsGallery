@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/hompage.css">
+    <script src="js/burger-menu.js"></script>
     <title>Kims Gallerie</title>
 </head>
 <body>
@@ -19,15 +20,35 @@
         </div>
     </header>
 
-  <nav class="burgerMenu">
-    <ul id="burgerMenu">
-        <li><a href="index.html">Homepage</a></li>
-        <li><a href="html/gallery.html">Gallery</a></li>
-        <li><a href="html/about-me.html">About me</a></li>
-        <li><a href="html/contact.html">Contact</a></li>
-        <li class="exit" id="exit">&times;</li>
-    </ul>
-  </nav>
+    <nav class="burger-menu">
+        <div class="burger">
+            <div class="burger-icon" id="burger-icon">
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+        </div>
+        <div class="mobile-navigation" id="mobile-nav-content">
+            <ul class="nav-list" >
+                <div class="nav">
+                    <div class="mobileNav"></div>
+                    <li><a href="index.html">Homepage</a></li>
+                    <li><a href="html/gallery.html">Gallery</a></li>
+                    <li><a href="html/about-me.html">About me</a></li>
+                    <li><a href="html/contact.html">Contact</a></li>
+                    <li class="exit" id="exit">&times;</li>
+                </div>
+            </ul>
+    
+                    <div class="mobileFooter">
+                        <ul class="footerMobile">
+                            <li><a href="html/legal-terms.html">Legal Terms</a></li>
+                            <li><a href="html/privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="#">Instagram</a> | <a href="https://www.linkedin.com/in/kim-spiering-33aa20223/">LinkedIn</a></li>
+                            
+                        </ul>
+                    </div>
+        </div>
+    </nav>
   
     <section class="hero">
 
