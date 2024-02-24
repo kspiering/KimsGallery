@@ -70,7 +70,7 @@ body {
         margin-left: 5%;
         margin-right: 5%;
         margin-top: 50px;
-        gap: 5px;
+        gap: 25px;
     }
     .small li {
         list-style: none; 
@@ -123,9 +123,10 @@ body {
 .navigation a {
     text-decoration: none;
     color: #373737;
+    transition: transform 0.2s ease; 
     float: right;
     padding-bottom: 30px;
-    transition: transform 0.2s ease; 
+ 
     font-family: 'Montserrat-VariableFont';
 }
 
@@ -142,12 +143,15 @@ footer {
 .footerNav a {
     text-decoration: none;
     color: #373737;
+    transition: transform 0.2s ease; 
     font-family: 'Montserrat-VariableFont';
     font-size: 16px;
+ 
 }
 
 .footerNav a:hover {
-    color: #8b8b8b;
+    color:  rgb(34, 34, 34);
+    transform: scale(1.1);
 }
 
 .footerNav ul {
@@ -166,7 +170,7 @@ footer {
     justify-content: space-between;
     margin-left: 5%;
     margin-right: 5%;
-    margin-top: 100px;
+    margin-top: 120px;
     margin-bottom: 5%;
 }
 .small li {
@@ -175,11 +179,13 @@ footer {
 
 .small a {
     font-size: 14px;
+    color: #373737;
+    transition: transform 0.2s ease; 
 }
 
 .small a:hover {
-    font-size: 14px;
-    color: #8b8b8b;
+    color:  rgb(34, 34, 34);
+    transform: scale(1.1);
 }
 
 #copy, #kim {
