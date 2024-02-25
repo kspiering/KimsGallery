@@ -29,6 +29,9 @@ a {
 }
 /* Mobile */
 @media (max-width: 600px) {
+.socials, #legals {
+    display: none;
+}
 
 .navigation {
      display: none;
