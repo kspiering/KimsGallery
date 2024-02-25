@@ -24,7 +24,9 @@ body {
     background-color: rgb(249, 239, 239);
 }
 
-
+a {
+    font-family: 'Montserrat-VariableFont';
+}
 /* Mobile */
 @media (max-width: 600px) {
 
@@ -33,7 +35,7 @@ body {
 }
 
 .burgerMenu {
-    z-index: 1;
+    z-index: 10;
 }
 
 .burgerIcon {
@@ -51,33 +53,39 @@ body {
     margin: 3px 0;
     transition: 0.4s;
 }
-
-.mobileNav {
-    height: 100%;
-    width: 75%;
-    background-color: rgb(243, 243, 242);
+#mobile-nav-content {
     list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+    margin-top: 150px;
 }
 
-.overlay {
+ .footerMobileNav {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    margin-top: 270px;
+}
+.mobileNav {
+    background-color: rgb(249, 239, 239);
+    display: none;
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100%;
+    right: 0;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: none;
-    z-index: 999;
-}
-
-.overlay.active {
-    display: block;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .mobileNav a {
     text-decoration: none;
     color:#535353;
-    font-size: 16px;
+    font-size: 18px;
 }
 .footerMobileNav a {
     text-decoration: none;
@@ -85,33 +93,15 @@ body {
     font-size: 14px;
 }
 
-.mobileNav-visible {
-    display: flex;
-    top: 60px;
-    flex-direction: column;
-    background-color: #2e2e2e;
-    height: 100vh;
-    width: 100%;
-    align-items: flex-start;
-  }
-  .show {
-    display: flex;
-  }
-
-.exit {
+.closeIcon {
+    font-size: 40px;
+    font-family: 'Montserrat-VariableFont';
     position: absolute;
-      top: 7px;
-      right: 0;
-      margin-right: 5%;
-      font-size: 60px;
-      cursor: pointer;
-      color: #555;
-      }
+    right: 20px;
+    top: 20px;
+    color: #535353;
+}
 
-  .heroImg img {
-    height: auto;
-    width: 150px;
-  }
     /* Footer */
     footer {
         margin-bottom: 2%;
@@ -130,22 +120,23 @@ body {
     
     .footerNav ul {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: flex-start;
         list-style: none;
-        gap: 20px;
+        gap: 10px;
         margin-top: 30px;
         margin-left: 5%;
     }
     
     .small {
         display: flex;
+        justify-content: center;
         flex-direction: row;
         flex-wrap: wrap;
         margin-left: 5%;
         margin-right: 5%;
         margin-bottom: 5%;
-        margin-top: 150px;
+        margin-top: 40px;
         gap: 10px;
     }
     .small li {

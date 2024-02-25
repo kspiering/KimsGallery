@@ -4,52 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/main.css">
-   
+    <script src="../js/burger-menu.js" defer></script>
     <title>About me</title>
 </head>
 <body>
     <header>
         <div class="navigation">
             <ul>
-                <li><a href="../index.html">Homepage</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="about-me.html">About me</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="html/gallery.html">Gallery</a></li>
+                <li><a href="html/about-me.html">About me</a></li>
+                <li><a href="html/contact.html">Contact</a></li>
             </ul>
+        </div>
+
+        <div class="burgerMenu">
+            <div class="burgerIcon" id="burgerIcon">
+                <div class="burgerLinie"></div>
+                <div class="burgerLinie"></div>
+                <div class="burgerLinie"></div>
+            </div>
+        
+            <div class="mobileNav" id="mobileNav">
+                <ul id="mobile-nav-content">
+                    <li><a href="index.html">Homepage</a></li>
+                    <li><a href="html/gallery.html">Gallery</a></li>
+                    <li><a href="html/about-me.html">About me</a></li>
+                    <li><a href="html/contact.html">Contact</a></li>
+                   
+                </ul>
+                <div class="footerMobileNav">
+                    <li><a href="html/legal-terms.html">Legal Terms</a> | <a href="html/privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="https://www.linkedin.com/in/kim-spiering-33aa20223/">LinkedIn</a></li>
+                </div>
+                <div class="closeIcon" id="closeIcon">X</div>
+            </div>
         </div>
     </header>
 
-    <nav class="burgerMenu">
-        <ul id="burgerMenu">
-            <li><a href="../index.html">Homepage</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="about-me.html">About me</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li class="exit" id="exit">&times;</li>
-        </ul>
-      </nav>
 
-
-<footer>
-    <div class="footerNav">
-        <ul>
-            <li><a href="../index.html">Homepage</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="about-me.html">About me</a></li>
-                <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <div class="small">
-            <span id="copy">&copy;Copyright 2024 </span>
-            <li><a href="legal-terms.html">Legal Terms</a></li>
-            <li><a href="privacy-policy.html">Privacy Policy</a></li>
-            <div class="socials">
-                <li><a href="#">Instagram</a> | <a href="#">LinkedIn</a></li>
-
+      <footer>
+        <div class="footerNav">
+            <ul>
+                <li><a href="index.html">Homepage</a></li>
+                <!-- <li><a href="html/gallery.html">Gallery</a></li>
+                <li><a href="html/about-me.html">About me</a></li> -->
+                <li><a href="html/contact.html">Contact</a></li>
+            </ul>
+            <div class="small">
+                <!-- <li><a href="html/legal-terms.html">Legal Terms</a> | <a href="html/privacy-policy.html">Privacy Policy</a></li> -->
+                <li> <span id="copy">&copy;2024 Kim Spiering </span></li>
+      
+                <!-- <div class="socials">
+                    <li><a href="https://www.linkedin.com/in/kim-spiering-33aa20223/">LinkedIn</a></li>
+                </div> -->
             </div>
+      
         </div>
-  
-    </div>
-</footer>
+    </footer>
 
 </body>
 </html>

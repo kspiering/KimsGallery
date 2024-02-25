@@ -1,21 +1,16 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const burgerIcon = document.querySelector(".burgerIcon");
-  const menu = document.querySelector(".mobileNav");
-  const overlay = document.querySelector(".overlay");
-  const closeBtn = document.getElementById("exit");
+const burgerIcon = document.getElementById("burgerIcon");
+const mobileNav = document.getElementById("mobileNav");
+const closeIcon = document.getElementById("closeIcon");
 
-  burgerIcon.addEventListener("click", function () {
-    menu.classList.toggle("mobileNav-visible");
-    overlay.classList.toggle("active");
-  });
+// Verstecke das mobile Navigationsmenü zu Beginn
+mobileNav.style.display = "none";
 
-  overlay.addEventListener("click", function () {
-    menu.classList.remove("mobileNav-visible");
-    overlay.classList.remove("active");
-  });
+burgerIcon.addEventListener("click", function () {
+  // Wenn das Burger-Symbol geklickt wird, zeige das mobile Navigationsmenü an
+  mobileNav.style.display = "block";
+});
 
-  closeBtn.addEventListener("click", function () {
-    menu.classList.remove("mobileNav-visible");
-    overlay.classList.remove("active");
-  });
+closeIcon.addEventListener("click", function () {
+  // Wenn das Schließen-Symbol (X) geklickt wird, verstecke das mobile Navigationsmenü
+  mobileNav.style.display = "none";
 });
