@@ -233,10 +233,7 @@ footer {
 .small {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
-    margin-left: 5%;
-    margin-right: 5%;
     margin-top: 120px;
     margin-bottom: 5%;
 }
@@ -257,8 +254,14 @@ footer {
 
 #copy {
     color: #535353;
-
     font-family: 'Montserrat-VariableFont';
     font-size: 14px;
+}
+.socials {
+    margin-right: 5%;
+}
+
+#legals {
+    margin-left: 5%;
 }
 }
