@@ -21,7 +21,7 @@
 /* Allgemein */
 
 body {
-    background-color: rgb(249, 239, 239);
+    background-color: rgb(255, 255, 255);
 }
 
 a {
@@ -74,7 +74,7 @@ a {
     margin-top: 270px;
 }
 .mobileNav {
-    background-color: rgb(249, 239, 239);
+    background-color: rgb(255, 255, 255);
     display: none;
     position: fixed;
     top: 0;
@@ -170,11 +170,11 @@ a {
 }
 
 .navigation {
-    background-color: rgb(249, 239, 239);
+    background-color: rgb(255, 255, 255);
     position: fixed;
     top: 0;
     width: 100%;
-    border-bottom: 0.5px solid rgb(167, 167, 167);
+    /* border-bottom: 0.5px solid rgb(167, 167, 167); */
     z-index: 1000;
     }
 
