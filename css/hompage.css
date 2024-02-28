@@ -22,8 +22,6 @@
 @media (max-width: 600px) {
   
     h1 {
-        margin-top: 100px;
-        margin-left: 5%;
         font-family: 'Lora-Italic-VariableFont';
         font-size: 25px;
     
@@ -35,34 +33,43 @@
         font-size: 18px;
     }
     
-/* img {
-        width: 350px;
-        height: auto;
-        margin: 5%;
-    }
-    
-    .heroImg {
-
-      z-index: -1;
-      display: flex;
-      justify-content: center;
-    
-    } */
     .intro {
-        width: 100%;
         display: flex;
-        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: column;
     }
-    .intro p {
+    .intro a {
         font-family: 'Montserrat-VariableFont';
         margin-bottom: 50px;
         margin-top: 20px;
-        margin-left: 5%;
-        margin-right: 5%;
         font-size: 16px;
-        width: 80%;
+        color: #373737;
+        text-decoration: none;
     }
     
+   .hero {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 80px;
+    
+   }   
+
+.artwork {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+img {
+    width: 350px;
+    height: auto;
+}
+
     }
 
 /* Desktop */
@@ -119,7 +126,7 @@ img {
     height: auto;
     filter: grayscale(100%);
     transition: filter 0.5s ease; 
-    transition: transform 0.5s ease; 
+    transition: transform 0.5s ease;
 }
 
 img:hover {
