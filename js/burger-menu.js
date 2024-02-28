@@ -2,6 +2,7 @@ const burgerIcon = document.getElementById("burgerIcon");
 const mobileNav = document.getElementById("mobileNav");
 const closeIcon = document.getElementById("closeIcon");
 
+// Verstecke das mobile Navigationsmenü zu Beginn
 mobileNav.style.display = "none";
 
 burgerIcon.addEventListener("click", function () {
