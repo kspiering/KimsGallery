@@ -21,11 +21,12 @@
 /* Allgemein */
 
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(21, 21, 21);
 }
 
 a {
     font-family: 'Montserrat-VariableFont';
+    color: #dedede;
 }
 /* Mobile */
 @media (max-width: 600px) {
@@ -47,12 +48,13 @@ a {
     flex-direction: column;
     margin-right: 5%;
     margin-top: 30px;
+ 
 }
 
 .burgerLinie {
     height: 4px;
     width: 35px;
-    background-color: #555;;
+    background-color: #b2b2b2;
     margin: 3px 0;
     transition: 0.4s;
 }
@@ -74,7 +76,7 @@ a {
     margin-top: 270px;
 }
 .mobileNav {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(21, 21, 21);
     display: none;
     position: fixed;
     top: 0;
@@ -87,12 +89,10 @@ a {
 
 .mobileNav a {
     text-decoration: none;
-    color:#535353;
     font-size: 18px;
 }
 .footerMobileNav a {
     text-decoration: none;
-    color:#535353;
     font-size: 14px;
 }
 
@@ -102,7 +102,7 @@ a {
     position: absolute;
     right: 20px;
     top: 20px;
-    color: #535353;
+    color: #ddeded;
 }
 
     /* Footer */
@@ -112,13 +112,12 @@ a {
     
     .footerNav a {
         text-decoration: none;
-        color: #373737;
         font-family: 'Montserrat-VariableFont';
         font-size: 12px;
     }
     
     .footerNav a:hover {
-        color: #8b8b8b;
+        color: #ffffff;
     }
     
     .footerNav ul {
@@ -144,6 +143,7 @@ a {
     }
     .small li {
         list-style: none; 
+        color: #dedede;
     }
     
     .small a {
@@ -152,13 +152,16 @@ a {
     
     .small a:hover {
         font-size: 11px;
-        color: #8b8b8b;
+        color: #ffffff;
     }
     
     #copy {
-        color: #373737;
+        color: #ddeded;
         font-family: 'Montserrat-VariableFont';
         font-size: 11px;
+    }
+    .footerMobileNav a {
+        color: #dedede;
     }
     }
 
@@ -170,7 +173,7 @@ a {
 }
 
 .navigation {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(21, 21, 21);
     position: fixed;
     top: 0;
     width: 100%;
@@ -190,7 +193,6 @@ a {
 
 .navigation a {
     text-decoration: none;
-    color: #373737;
     transition: transform 0.2s ease; 
     float: right;
     padding-bottom: 30px;
@@ -198,7 +200,7 @@ a {
 }
 
 .navigation a:hover {
-    color:  rgb(34, 34, 34);
+    color:  rgb(255, 255, 255);
     transform: scale(1.1);
 }
 
@@ -209,14 +211,13 @@ footer {
 
 .footerNav a {
     text-decoration: none;
-    color: #535353;
     font-family: 'Montserrat-VariableFont';
     font-size: 16px;
  
 }
 
 .footerNav a:hover {
-    color:  rgb(34, 34, 34);
+    color:  rgb(255, 255, 255);
     transform: scale(1.1);
 }
 
@@ -239,21 +240,22 @@ footer {
 }
 .small li {
     list-style: none; 
+    color: #dedede;
 }
 
 .small a {
     font-size: 14px;
-     color: #535353;
+    color: #dedede;
     transition: transform 0.2s ease; 
 }
 
 .small a:hover {
-    color:  rgb(34, 34, 34);
+    color:  rgb(255, 255, 255);
     transform: scale(1.1);
 }
 
 #copy {
-    color: #535353;
+    color: #dedede;
     font-family: 'Montserrat-VariableFont';
     font-size: 14px;
 }
@@ -263,5 +265,10 @@ footer {
 
 #legals {
     margin-left: 5%;
+ 
+}
+
+.footerMobileNav a {
+    color: #dedede;
 }
 }

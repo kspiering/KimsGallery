@@ -15,6 +15,7 @@
     h1 {
         font-family: 'Lora-Italic-VariableFont';
         font-size: 25px;
+        color: #ddeded;
     
     }
 
@@ -53,6 +54,7 @@
  
         font-family: 'Lora-Italic-VariableFont';
         font-size: 30;
+        color: #ddeded;
     }
 
 .gallery {

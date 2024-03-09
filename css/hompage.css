@@ -24,6 +24,7 @@
     h1 {
         font-family: 'Lora-Italic-VariableFont';
         font-size: 25px;
+        color: #dedede;
     
     }
     .hero p {
@@ -43,7 +44,7 @@
         margin-bottom: 50px;
         margin-top: 20px;
         font-size: 16px;
-        color: #373737;
+        color: #dedede;
         text-decoration: none;
     }
     
@@ -90,7 +91,7 @@ h1 {
  
     font-family: 'Lora-Italic-VariableFont';
     font-size: 60px;
-    color: #1f1f1f;
+    color: #dedede;
 
 
 }
@@ -103,7 +104,7 @@ h1 {
     font-family: 'Montserrat-VariableFont';
     margin-bottom: 120px;
     font-size: 20px;
-    color: #373737;
+    color: #dedede;
     transition: transform 0.2s ease; 
     cursor: pointer;
     text-decoration: none;
@@ -111,7 +112,7 @@ h1 {
 
 .intro a:hover {
 
-    color: rgb(22, 22, 22);
+    color: #ffffff;
 }
 .artwork {
     display: flex;
