@@ -36,7 +36,7 @@
     
     .intro {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         flex-direction: column;
     }
     .intro a {
@@ -50,7 +50,7 @@
     
    .hero {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
     flex-wrap: wrap;
     margin-left: 5%;
@@ -67,7 +67,7 @@
 }
 
 img {
-    width: 350px;
+    width: 300px;
     height: auto;
     margin: 20px;
 }
@@ -79,7 +79,7 @@ img {
 
    .hero {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
     flex-wrap: wrap;
     margin-left: 5%;
