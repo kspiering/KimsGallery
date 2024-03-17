@@ -7,32 +7,73 @@
 
 /* Mobile */
 @media (max-width: 600px) {
+
+  .options {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    list-style: none;
+    margin-bottom: 1rem;
+  }
+
+  .options a {
+    color: rgb(95, 95, 95);
+    text-decoration: none;
+    margin: 10px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: rgb(226, 226, 226, 0.8);
+    font-family: 'Montserrat-VariableFont';
+    font-size: 18px;
+    transition: transform 0.5s ease;
+  }
+
+  .options a:hover {
+    color: rgb(50, 50, 50);
+   font-size: 20px;
+   transform: scale(font-size);
+  }
     .titles {
         display: flex;
-        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         margin-top: 50px;
+    }
+    .subtitles {
+      display: flex;
+     justify-content: flex-start;
+     margin-left: 5%
     }
     h1 {
         font-family: 'Lora-Italic-VariableFont';
         font-size: 25px;
         color: #ddeded;
+        margin-bottom: 1rem;
     
     }
-
-    .gallery {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        margin-top: 25px;
-      }
+    h2 {
+      font-family: 'Lora-Italic-VariableFont';
+        font-size: 22px;
+        color: #ddeded;
+      
+    }
+    .posters, .paintings {
+      display: flex;
+      align-items: center;
+     flex-direction: column;
+      margin-top: 50px;
+      margin-bottom: 50px;
+   
+    }
       
       img {
         width: 350px;
         height: auto;
       }
        .image {
+        margin-top: 50px;
+        margin-bottom: 50px;
         transition: transform 0.3s ease;
-        margin: 20px;
       }
       
       .image:hover {
@@ -45,28 +86,65 @@
 
 @media (min-width: 600px) {
 
+  .options {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    list-style: none;
+    margin-bottom: 1rem;
+  }
+
+  .options a {
+    color: rgb(95, 95, 95);
+    text-decoration: none;
+    margin: 10px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: rgb(226, 226, 226, 0.8);
+    font-family: 'Montserrat-VariableFont';
+    font-size: 20px;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+  }
+
+  .options a:hover {
+    color: rgb(50, 50, 50);
+   font-size: 22px;
+   transform: scale(font-size);
+  }
     .titles {
         display: flex;
-        justify-content: center;
+        align-items:  center;
+        flex-direction: column;
         margin-top: 100px;
     }
+    .subtitles {
+      display: flex;
+     justify-content: flex-start;
+     margin-left: 5%
+    }
     h1 {
- 
         font-family: 'Lora-Italic-VariableFont';
-        font-size: 30;
+        font-size: 30px;
         color: #ddeded;
+        margin-bottom: 2rem;
     }
 
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 5px;
-  margin-top: 100px;
-  margin-bottom: 150px;
-  margin-left: 5%;
-   
+    h2 {
+      font-family: 'Lora-Italic-VariableFont';
+        font-size: 25px;
+        color: #ddeded;
+      
+    }
+
+  .posters, .paintings {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 5%;
   }
-  
   img {
     width: 350px;
     height: auto;
